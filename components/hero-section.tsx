@@ -1,0 +1,115 @@
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Calendar } from "lucide-react"
+
+export function HeroSection() {
+  return (
+    <section className="relative overflow-hidden bg-background py-20 sm:py-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+              </span>
+              Ahorra hasta un 20% en envíos
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
+              Automatiza Tus Envíos Andreani y Ahorra Hasta un 20%
+            </h1>
+
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-pretty">
+              Convierte tus CSVs de Tiendanube y Shopify en envíos Andreani listos, aplicando descuentos exclusivos.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="text-base">
+                Ver Demo
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button size="lg" variant="outline" className="text-base bg-transparent">
+                <Calendar className="mr-2 h-4 w-4" />
+                Agenda una Llamada
+              </Button>
+            </div>
+
+            <div className="flex items-center gap-8 pt-4">
+              <div>
+                <div className="text-3xl font-bold text-foreground">20%</div>
+                <div className="text-sm text-muted-foreground">Ahorro promedio</div>
+              </div>
+              <div className="h-12 w-px bg-border"></div>
+              <div>
+                <div className="text-3xl font-bold text-foreground">5hrs</div>
+                <div className="text-sm text-muted-foreground">Ahorradas por semana</div>
+              </div>
+              <div className="h-12 w-px bg-border"></div>
+              <div>
+                <div className="text-3xl font-bold text-foreground">99%</div>
+                <div className="text-sm text-muted-foreground">Precisión</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="relative rounded-2xl bg-muted p-8 shadow-2xl">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border">
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-foreground">ventas_tiendanube.csv</div>
+                    <div className="text-xs text-muted-foreground">250 pedidos</div>
+                  </div>
+                  <div className="text-accent font-semibold">✓</div>
+                </div>
+
+                <div className="flex items-center justify-center py-2">
+                  <ArrowRight className="h-6 w-6 text-primary animate-pulse" />
+                </div>
+
+                <div className="flex items-center gap-3 p-4 bg-primary/5 rounded-lg border-2 border-primary">
+                  <div className="h-12 w-12 rounded-lg bg-primary flex items-center justify-center">
+                    <svg
+                      className="h-6 w-6 text-primary-foreground"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-foreground">rotulos_andreani.xlsx</div>
+                    <div className="text-xs text-accent font-medium">Descuento aplicado: $12,450</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground rounded-full p-4 shadow-lg">
+              <div className="text-center">
+                <div className="text-2xl font-bold">-20%</div>
+                <div className="text-xs">Ahorro</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
