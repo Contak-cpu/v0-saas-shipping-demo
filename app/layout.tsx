@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ShipOptimize - Automatiza Tus Envíos Andreani",
+  title: "Facil Uno - Soluciones Digitales",
   description:
     "Optimiza la gestión de envíos y ahorra hasta un 20% en costos. Convierte tus CSVs de Tiendanube y Shopify en envíos Andreani listos.",
   generator: "v0.app",
