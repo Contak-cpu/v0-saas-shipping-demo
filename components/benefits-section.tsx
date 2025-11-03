@@ -7,27 +7,28 @@ export function BenefitsSection() {
       icon: DollarSign,
       title: "Ahorro Garantizado",
       description:
-        "Reduce tus costos de envío entre un 10% y 20% aplicando descuentos directos de Andreani automáticamente.",
+        "Reducí tu promedio de envíos notablemente pasando de 7500/8000 a 5000/5500 promedio por envío, aplicando cupones desde un 10 a un 40% de descuento.",
       color: "text-accent",
     },
     {
       icon: Clock,
       title: "Ahorro de Tiempo",
-      description: "Automatiza el proceso manual y libera horas de trabajo. Lo que tomaba días ahora toma minutos.",
+      description:
+        "Automatiza el proceso manual y libera horas de trabajo. Lo que tomaba días ahora toma minutos. Lo que requería de trabajo humano hoy simplificado en nuestra aplicación.",
       color: "text-primary",
     },
     {
       icon: Target,
       title: "Precisión y Control",
       description:
-        "Elimina errores con la vinculación automática de productos a rótulos y reportes de stock en tiempo real.",
+        "Nada mejor que llevar precisamente el control de tu stock y tus envíos de forma fácil y cómoda sin depender de papeles escritos a mano o hojas de excel que se pueden perder.",
       color: "text-chart-3",
     },
     {
       icon: Zap,
-      title: "Integración Fácil",
+      title: "¡Facil.uno se adapta a todo!",
       description:
-        "Compatible con tus plataformas de e-commerce favoritas: Tiendanube y Shopify. Sin configuración compleja.",
+        "¡Facil.uno se adapta a todo! Podés utilizar nuestra plataforma indistinto la plataforma que uses para vender, procesamos correctamente archivos de Tiendanube y Shopify. Podés generar el archivo de envíos para tu empresa de correspondencia preferida ya sea Correo Argentino o Andreani pudiendo utilizar cupón de descuento en ambas!",
       color: "text-chart-4",
     },
   ]
@@ -63,19 +64,31 @@ export function BenefitsSection() {
           })}
         </div>
 
-        <div className="mt-16 max-w-4xl mx-auto">
+        <div className="mt-16 max-w-4xl mx-auto space-y-6">
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Operativos desde el 27/10/25 • Fase Beta
+            </div>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Estamos en nuestras primeras semanas de operación. Tu feedback es esencial para mejorar.
+            </p>
+          </div>
           <Card className="p-8 bg-muted/50 border-2">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-muted-foreground">Empresas confían en nosotros</div>
+                <div className="text-4xl font-bold text-primary mb-2">+35</div>
+                <div className="text-sm text-muted-foreground">Clientes Registrados</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">50K+</div>
+                <div className="text-4xl font-bold text-accent mb-2">35K+</div>
                 <div className="text-sm text-muted-foreground">Envíos procesados mensualmente</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-chart-3 mb-2">$2M+</div>
+                <div className="text-4xl font-bold text-chart-3 mb-2">$50M+</div>
                 <div className="text-sm text-muted-foreground">Ahorrados por nuestros clientes</div>
               </div>
             </div>

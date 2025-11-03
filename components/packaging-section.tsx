@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, MessageCircle } from "lucide-react"
 
-export function HeroSection() {
+export function PackagingSection() {
   return (
-    <section className="relative overflow-hidden bg-background py-20 sm:py-32">
+    <section className="relative overflow-hidden bg-muted/30 py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -12,19 +12,19 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              Ahorra hasta un 20% en envíos
+              Empaquetamiento inteligente
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-              ¡Facilita tus envíos de Andreani y Correo Argentino con nuestra plataforma!
-            </h1>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
+              Facilita tu empaquetamiento
+            </h2>
 
             <div className="space-y-4">
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-pretty">
-                ¡Ingresa tu archivo CSV de ventas y obtené tu archivo listo para la empresa de envíos que utilices!
+                Optimiza el proceso de empaque de tus pedidos con nuestra herramienta inteligente. Con nuestra herramienta "Integración de SKU en Rótulos" podés ingresar el producto y la cantidad a despachar dentro de tu rótulo generado por tu empresa de envíos!
               </p>
               <p className="text-lg sm:text-xl text-accent font-medium">
-                Gracias a <span className="font-bold">facil.uno</span> podés utilizar cupones de descuento en todos tus envíos ¿Lo vas a dejar pasar?
+                Con <span className="font-bold">facil.uno</span> automatizás todo el proceso y ahorrás tiempo y recursos.
               </p>
             </div>
 
@@ -45,13 +45,13 @@ export function HeroSection() {
 
             <div className="flex items-center gap-8 pt-4">
               <div>
-                <div className="text-3xl font-bold text-foreground">$1.5M</div>
-                <div className="text-sm text-muted-foreground">Ahorro mensual estimado</div>
+                <div className="text-3xl font-bold text-foreground">50%</div>
+                <div className="text-sm text-muted-foreground">Menos tiempo</div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
-                <div className="text-3xl font-bold text-foreground">1K</div>
-                <div className="text-sm text-muted-foreground">Pedidos mensuales</div>
+                <div className="text-3xl font-bold text-foreground">100%</div>
+                <div className="text-sm text-muted-foreground">Automatizado</div>
               </div>
               <div className="h-12 w-px bg-border"></div>
               <div>
@@ -62,7 +62,7 @@ export function HeroSection() {
           </div>
 
           <div className="relative">
-            <div className="relative rounded-2xl bg-muted p-8 shadow-2xl">
+            <div className="relative rounded-2xl bg-background p-8 shadow-2xl">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -98,13 +98,13 @@ export function HeroSection() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+                        d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
                       />
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm font-medium text-foreground">rotulos_andreani.xlsx</div>
-                    <div className="text-xs text-accent font-medium">Descuento aplicado: $375,000</div>
+                    <div className="text-sm font-medium text-foreground">rotulos_para_despachar.pdf</div>
+                    <div className="text-xs text-accent font-medium">SKU integrado automáticamente</div>
                   </div>
                 </div>
               </div>
@@ -112,8 +112,8 @@ export function HeroSection() {
 
             <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground rounded-full p-4 shadow-lg">
               <div className="text-center">
-                <div className="text-2xl font-bold">-20%</div>
-                <div className="text-xs">Ahorro</div>
+                <div className="text-2xl font-bold">✓</div>
+                <div className="text-xs">Listo</div>
               </div>
             </div>
           </div>
@@ -122,3 +122,4 @@ export function HeroSection() {
     </section>
   )
 }
+

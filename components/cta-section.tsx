@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -14,14 +14,12 @@ export function CTASection() {
             Únete a cientos de empresas que ya están optimizando sus envíos y reduciendo costos operativos.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" className="text-base">
-              Prueba Gratis por 7 Días
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-base bg-transparent">
-              <Calendar className="mr-2 h-4 w-4" />
-              Solicita una Demostración Personalizada
+          <div className="flex justify-center pt-4">
+            <Button size="lg" className="text-base" asChild>
+              <a href="#precios">
+                Quiero acceder a mi plan ahora
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
 
